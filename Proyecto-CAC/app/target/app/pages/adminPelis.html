@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/imgs/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jacquard+12+Charted&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a2ab3c91df.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/stylesAdministrar.css">
+    <title>Administrador Pelis | CAC-MOVIES</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navegacion">
+            <a class="logo" href="../index.html">
+                <i class="fa-solid fa-film"></i>
+                <span>CAC-Movies</span>
+            </a>
+            <ul class="botonera">
+                <li class="botonlista"><a class="linkboton" href="../index.html">Tendencias</a></li>
+                <li class="botonlista"><a class="linkboton" href="../pages/registrarse.html">Registrarse</a></li>
+                <li class="botonlista"><a class="linkboton iniciarsesion" href="../pages/iniciar-sesion.html">Iniciar Sesión</a></li>
+            </ul>            
+        </nav>
+    </header>
+    <main class="mainAdmin">
+        <section class="container mt-4 mb-5">
+            <h2>Agregar Película</h2>
+                <form id="formAgregar" class="row row-cols-lg-auto g-3 align-items-center"> 
+                        <div class="col-12 col-md-6">
+                            <label for="titulo">Título:</label>
+                            <input class="form-control" type="text" id="titulo" name="titulo" required>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <label for="genero">Género:</label>
+                            <input class="form-control" type="text" id="genero" name="genero" required>
+                        </div>
+                        <div class="col-6 col-md-2">
+                            <label for="duracion">Duración:</label>
+                            <input class="form-control" type="text" id="duracion" name="duracion" required>
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <label for="imagen">Carátula:</label>
+                            <input class="form-control" type="file" id="imagen" name="imagen" accept="image/*">
+                        </div>
+                        <div class="col-12">
+                        <button class="align-self-center btn btn-success" id="agregarPeli" type="submit">Agregar Película</button>
+                        </div>
+                    </form>
+        </section>
+        <hr>
+        <section class="container mt-5 mb-5 overflow-auto">
+            <h2>Listado de Películas</h2>
+            <table id="tablaPelis" class="table table-dark table-striped">
+                <thead>
+                    <tr>
+                        <th>Título</th>
+                        <th>Género</th>
+                        <th>Duración (min)</th>
+                        <th>Imagen</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer class="footer">
+        <nav class="navegacion">
+            <ul class="botonera">
+                <li class="botonlista"><a class="linkboton" href="index.html">Términos y Condiciones</a></li>
+                <li class="botonlista"><a class="linkboton" href="index.html">Preguntas frecuentes</a></li>
+                <li class="botonlista"><a class="linkboton" href="index.html">Ayuda</a></li>
+                <li class="botonlista"><a class="linkboton admin" href="pages/adminPelis.html">Administrador Películas</a></li>
+            </ul> 
+        </nav>
+        <a href="#main" class="flechaarriba">
+            <img src="../imgs/flecha-hacia-arriba.png" alt="Subir al comienzo">
+        </a>
+    </footer>
+    <script src="../js/get-peliculas.js"></script>
+    <script src="../js/post-pelicula.js"></script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Nunito',sans-serif;
+}
+
+body{
+    height: 100vh;
+    background:linear-gradient(to right top, #24242473,#24242473),url(../imgs/bg-register.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+    /* HEADER */
+header{
+    display: inline-block;
+    padding:2rem;
+    .fas {
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 1.2rem;  
+
+    }
+    .title {
+        text-decoration: none;
+        color: white;
+        font-size: 1.3rem;
+        font-weight: 700;
+    }
+
+}
+    /* FORMULARIO */
+
+.seccion-formulario{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    background-color:rgb(42, 42, 42);
+    width: 30%;
+    margin:0 auto;
+    border-radius: 5px;
+    padding: 40px 20px;
+    height: 90vh;
+    font-size:1rem;
+    .contenedor-formulario{
+        width: 100%;
+        .titulo-formulario {
+            text-align: left;
+            font-weight: 700;
+            padding: 1rem;
+        }
+
+        form {
+            width: 100%;
+            .elemento-input{
+                background-color:rgb(42, 42, 42);
+                padding: 0.5rem;
+                input,select {
+                    width: 100%;
+                    margin-bottom: 10px;
+                    height: 40px;
+                    padding: 0px 20px;
+                    font-size: 1.2rem;
+                    border-radius: 20px;
+                    border: 2px solid #9f3647;
+                    background-color: #333333;
+                    outline: none;   
+                    color: white;
+                }
+
+                ::placeholder {
+                    color: #787b7e; /* Cambia este valor por el color que desees */
+                }
+            }
+            .elemento-input.error input {
+                border: 2px solid red;
+            }
+                    
+            .error-text{
+                color: #ff0000;
+                font-size: 0.8rem;
+                margin-top:0px;
+                margin-bottom: 10px;
+                align-items: flex-start;
+            }
+
+            .terminos-condiciones{
+                padding: 0.5rem;
+                text-align: left;
+                font-size: 0.8rem;
+                display: flex;
+                align-items: center;
+                margin-bottom: 20px;
+
+                .texto-check{
+                    margin-left: 10px;
+                }
+            }
+                
+            .boton-inicio{
+                border: none;
+                border-radius: 5px;
+                font-weight: 500;
+                width: 100%;
+                height: 60px;
+                box-sizing: content-box;
+                background-color:#9f3647;
+                color: white;
+                margin-bottom: 1rem;   
+            }
+            .registrarse{
+                margin-top:40px;
+                font-size: 1rem;
+                text-decoration: none;
+                color: #787878;
+                font-weight:400;       
+            }
+            .ayuda{
+                margin-top:40px;
+                font-size: 1rem;
+                text-decoration: none;
+                color: #787878;
+                font-weight:400;
+                   
+            }
+        }
+    }
+}
+
+ /* FORMULARIO RESPONSIVE */
+
+@media (max-width: 1200px){
+
+    .seccion-formulario {
+        width: 95%;
+        padding: 10px 10px;
+        .contenedor-formulario{
+            .titulo-formulario {
+                font-size: 2rem;
+                text-align: center;
+            }
+            form {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+}

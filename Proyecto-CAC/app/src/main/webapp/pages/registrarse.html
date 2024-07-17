@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro | CAC-MOVIES </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/styleFormulario.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <script src="https://kit.fontawesome.com/f7fb471b65.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="imgs/logo-registro.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300&amp;display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <i class="fas fa-film" aria-hidden="true"></i>
+        <a class="title" href="../index.html">CAC-Movies</a>
+    </header>
+    <main>
+        <section class="seccion-formulario">
+            <div class="contenedor-formulario">
+                <h1 class="titulo-formulario">Registro</h1>
+                <form method="get" id="loginForm">
+                    <div class="elemento-input">
+                        <input class="form-control form-control-m " type="text" name="nombre" id="nombre" placeholder="Nombre">
+                        <div class="error-text"></div>
+                    </div>
+                    <div class="elemento-input">
+                        <input class="form-control form-control-m" type="text" name="apellido" id="apellido" placeholder="Apellido"> 
+                        <div class="error-text"></div>
+                    </div>
+                    <div class="elemento-input">
+                        <input class="form-control form-control-m" type="email" name="email" id="email" placeholder="Email">
+                        <div class="error-text"></div>
+                    </div>
+                    <div class="elemento-input">
+                        <input class="form-control form-control" type="password" name="contraseña" id="contraseña" placeholder="Contraseña">
+                        <div class="error-text"></div>
+                    </div>
+                    <div class="elemento-input">
+                        <input class="form-control form-control-m form-control-c" type="date" name="nacimiento" id="fecha-nacimiento">
+                        <div class="error-text"></div>
+                    </div>
+                    <div class="elemento-input">
+                        <select class="form-select form" name="country" id="pais">
+                            <option value="">País</option>
+                            <option value="AR">Argentina</option>
+                            <option value="BO">Bolivia</option>
+                            <option value="BR">Brasil</option>
+                            <option value="CH">Chile</option>
+                            <option value="CO">Colombia</option>
+                            <option value="EC">Ecuador</option>
+                            <option value="PY">Paraguay</option>
+                            <option value="PE">Perú</option>
+                            <option value="UY">Uruguay</option>
+                            <option value="VE">Venezuela</option>
+                        </select>
+                        <div class="error-text"></div>
+                    </div>
+                    <div class="terminos-condiciones">
+                        <input class="check" type="checkbox" id="terminos">
+                        <label class="texto-check" for="terminos">Acepto términos y condiciones</label>
+                    </div>
+                    <div >
+                        <input value="Registrarse" class="boton-inicio" type="submit">
+                    </div>
+                    <div>
+                        <a class="ayuda" href="#">¿Necesitas ayuda?</a>
+                    </div>
+            </div>
+        </section>
+    </main>
+    <script src="../js/validacion.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
